@@ -10172,6 +10172,7 @@ cc_prebuilt_library_shared {
 			shared_libs: ["libbinder", "libmmosal", "liblog", "libutils", "libcutils", "libgui", "libui", "libwfdcommonutils", "libwfdconfigutils", "libinput", "libwfdmminterface", "libwfddisplayconfig", "libmedia_helper", "libaudioclient", "libwfdavenhancements", "libhidlbase", "libgralloctypes", "android.hardware.graphics.mapper@4.0", "libvndksupport", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.allocator-V2-ndk", "libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
+        check_elf_files: false,
 	compile_multilib: "both",
 	prefer: true,
 	system_ext_specific: true,
@@ -10238,6 +10239,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "both",
 	prefer: true,
 	system_ext_specific: true,
+        allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
